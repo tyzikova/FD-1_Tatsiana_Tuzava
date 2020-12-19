@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>table1</title>
+    <style>
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
+            height: 20px;
+            line-height: 20px;
+        }
+
+        .style1 {
+            background-color: rgb(17, 131, 36);
+            align-items: center;
+        }
+
+        .style2 {
+            background-color: rgb(250, 213, 171);
+        }
+
+        .style3 {
+            background-color: rgb(208, 190, 236);
+        }
+
+        .style4 {
+            background-color: rgb(255, 210, 217);
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border-collapse: collapse; width: 100%;">
+        <caption style="font-weight: bold; padding: 15px;">Добыча драгоценных камней</caption>
+        <tr class="style1">
+            <th style="width: 30px;"></th>
+            <th>2010</th>
+            <th>2012</th>
+            <th>2014</th>
+        </tr>
+        <tr class="style2">
+            <td>Сапфиры</td>
+            <td rowspan=2>1483</td>
+            <td>4532</td>
+            <td>6743</td>
+        </tr>
+        <tr class="style3">
+            <td>Рубины</td>
+            <td>3835</td>
+            <td>7482</td>
+        </tr>
+        <tr class="style4">
+            <td>Алмазы</td>
+            <td>683</td>
+            <td colspan=2 style="text-align: center;">238</td>
+        </tr>
+    </table>
+    <div style="text-align: center; padding-top: 15px;">Picture 1.1</div>
+</body>
+
+</html>

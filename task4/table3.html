@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <title>task 4</title>
+    <style>
+        .style1 {
+            background-color: black;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .style2 {
+            background-color: rgb(205, 243, 218);
+            height: 50px;
+            padding-top: 5px;
+            font-size: 12px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .style2 a {
+            background-image: url(sprites2.png);
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .style_table {
+            color: rgb(60, 120, 139);
+            cursor: pointer;
+        }
+
+        .style_table:hover {
+            color: rgb(14, 14, 136);
+        }
+
+        .style_colomn {
+            border: 1px solid rgb(81, 194, 81);
+            background-color: rgb(81, 194, 81);
+            cursor: pointer;
+            color: white;
+            width: 150px;
+            height: 30px;
+            margin: 5px;
+            border-radius: 3px;
+        }
+
+        .style_colomn:hover {
+            background-color: rgb(24, 83, 24);
+        }
+
+        .style_colomn2 {
+            border: 1px solid rgb(94, 169, 194);
+            background-color: rgb(247, 238, 238);
+            cursor: pointer;
+            color: rgb(60, 120, 139);
+            width: 150px;
+            height: 30px;
+            margin: 5px;
+            border-radius: 3px;
+        }
+
+        .style_colomn2:hover {
+            background-color: rgb(202, 196, 196);
+        }
+    </style>
+</head>
+
+<body style="margin: 0px; padding: 0px; font-family: Roboto, sans-serif;">
+    <header class="style1">
+        <a style="color: white; text-decoration: none; padding: 5px; margin: 10px; background-color: rgba(192, 192, 192, 0.2);"
+            href="">Trainings<sup>&#174;</sup></a>
+        <a style="color: white; text-decoration: none; padding: 5px; margin: 10px; background-color: rgba(192, 192, 192, 0.2);"
+            href="#1">List</a>
+        <a style="color: white; text-decoration: none; padding: 5px; margin: 10px; background-color: rgba(192, 192, 192, 0.2);"
+            href="#2">Blog</a>
+        <a style="color: white; text-decoration: none; padding: 5px; margin: 10px; background-color: rgba(192, 192, 192, 0.2);"
+            href="#3">FAQ</a>
+    </header>
+    <main>
+        <div id="1"
+            style="min-height: calc(100vh - 40px); background-image: url(pexels-photo-583846.jpeg); background-position: center center;
+        background-size: cover; background-repeat: no-repeat; background-attachment: fixed; display: flex; align-items: center;">
+            <div style="font-size: 54px; font-weight: bold; color: white; margin-left: 200px;">
+                <div>Start your</div>
+                <div>career</div>
+            </div>
+        </div>
+        <div style="background-color: rgb(194, 197, 195); padding: 5px;">
+            <div id="2" style="text-align: center; font-weight: bold; text-transform: uppercase; margin-top: 15px;">
+                trainings</div>
+            <hr style="margin: 10px; color: lightgray;">
+            <div style="text-indent: 25px; text-align: justify; padding: 0 10px;">
+                <div>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software liLorem Ipsum is simply dummy text of
+                    the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type specimen book.
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                    essentially unchanged..Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type specimen book.
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                    essentially unchanged.</div>
+                <br>
+                <div style="padding: 10px 0; text-align: center; text-transform: uppercase;"><strong>upcoming
+                        courses</strong>
+                </div>
+                <hr>
+
+                <table
+                    style="width: 100%; background-color: snow; padding: 5px; margin-bottom: 5px; table-layout: fixed;">
+                    <tr style="height: 50px;">
+                        <td style="text-align: left;">
+                            <div class="style_table">Программирование на GO</div>
+                            <div>20.08.2020 - 20.12.2020</div>
+                            <div>Занятия вторник и четверг с 18:30 до 20:30</div>
+                        </td>
+                        <td style="text-align: left;">
+                            <div><strong>750 BYN</strong></div>
+                            <div>128 уч.ч (три месяца)</div>
+                            <div><strong>Осталось</strong> 10 из 20 мест</div>
+                        </td>
+                        <td style="text-align: right; width: 200px;">
+                            <form><button class="style_colomn">Записаться</button></form>
+                            <form><button class="style_colomn2">Программа курса</button></form>
+                        </td>
+                    </tr>
+                </table>
+
+                <table
+                    style="width: 100%; background-color: snow; padding: 5px; margin-bottom: 5px; table-layout: fixed;">
+                    <tr style="height: 50px;">
+                        <td style="text-align: left;">
+                            <div class="style_table">JavaScript</div>
+                            <div>01.09.2020 - 30.12.2020</div>
+                            <div>Занятия вторник и пятница с 18:30 до 21:20</div>
+                        </td>
+                        <td style="text-align: left;">
+                            <div><strong>859 BYN</strong></div>
+                            <div>120 уч.ч (три месяца)</div>
+                            <div><strong>Осталось</strong> 8 из 12 мест</div>
+                        </td>
+                        <td style="text-align: right; width: 200px;">
+                            <form><button class="style_colomn">Записаться</button></form>
+                            <form><button class="style_colomn2">Программа курса</button></form>
+                        </td>
+                    </tr>
+                </table>
+
+                <table
+                    style="width: 100%; background-color: snow; padding: 5px; margin-bottom: 5px; table-layout: fixed;">
+                    <tr style="height: 50px;">
+                        <td style="text-align: left;">
+                            <div class="style_table">Web разработка</div>
+                            <div>08.07.2020 - 10.10.2020</div>
+                            <div>Занятия вторник и пятница с 18:30 до 21:20</div>
+                        </td>
+                        <td style="text-align: left;">
+                            <div><strong>1240 BYN</strong></div>
+                            <div>132 уч.ч (три месяца)</div>
+                            <div><strong>Осталось</strong> 4 из 10 мест</div>
+                        </td>
+                        <td style="text-align: right; width: 200px;">
+                            <form><button class="style_colomn">Записаться</button></form>
+                            <form><button class="style_colomn2">Программа курса</button></form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer id="3" class="style2">
+        <div style="padding-left: 10px">
+            <div>&copy; 2015-2020 "IT-Academy"</div>
+            <div>Rechitsky prospect, 80; Gomel region</div>
+            <div>+375(29)163-30-30</div>
+        </div>
+        <div style="padding-right: 10px;">
+            <div style="padding-left: 10px; margin-bottom: 3px;">We are in social networks</div>
+            <a href="https://www.facebook.com/itacademygomel" style="background-position: left top;" title="Facebook"
+                target="_blank"></a>
+            <a href="https://www.youtube.com/channel/UCtoTLSamEDXZ-9K3rqR6nww" style="background-position: -50px top;"
+                title="YouTube" target="_blank"></a>
+            <a href="https://www.instagram.com/itacademy.gomel" style="background-position: -75px top;"
+                title="Instagram" target="_blank"></a>
+            <a href="https://www.linkedin.com/checkpoint/challengesV2/AQFLIGWmvrpPXAAAAXZb4J_LH8rgwUisz5W-_p4BEAHKau-EXHnWtymptHX13kKLw-zK1RgyCXyLcL-ax8d0I3OZqFA4zQCCbQ?original_referer=https%3A%2F%2Fwww.gomel.it-academy.by%2F"
+                style="background-position: -100px top;" title="LinkedIn" target="_blank"></a>
+            <a href="https://plus.google.com" style="background-position: right top;" title="Google"
+                target="_blank"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
