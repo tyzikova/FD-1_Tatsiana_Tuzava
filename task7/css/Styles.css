@@ -1,0 +1,148 @@
+body{
+    margin: 0px; 
+    padding: 0px; 
+    font-family: Roboto, sans-serif;
+}
+header {
+    background-color: black;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+header a{
+    color: white;
+    text-decoration: none; 
+    padding: 5px; 
+    margin: 10px; 
+    background-color: rgba(192, 192, 192, 0.2);
+}
+footer {
+    background-color: rgb(207, 209, 208);
+    height: 50px;
+    padding-top: 5px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+footer a {
+    background-image: url(../images/sprites2.png);
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-left: 10px;
+}
+hr{
+    margin: 10px; 
+    color: lightgray;
+}
+table{
+    width: 100%; 
+    background-color: snow; 
+    padding: 5px; 
+    margin-bottom: 5px; 
+    table-layout: fixed;
+}
+td{
+    text-align: left;
+}
+tr{
+    height: 50px;
+}
+.td{
+    text-align: right;
+     width: 200px;
+}
+.div-image{
+    min-height: calc(100vh - 40px);
+    background-image: url(../images/pexels-photo-583846.jpeg); 
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    display: flex; 
+    align-items: center;
+}
+.div{
+    font-size: 54px; 
+    font-weight: bold; 
+    color: white; 
+    margin-left: 200px;
+}
+.inmain{
+    background-color: rgb(207, 209, 208); 
+    padding: 5px;
+}
+.trainings{
+    padding-top: 10px;
+    text-align: center; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    margin-top: 15px;
+}
+.text{
+    text-indent: 25px; 
+    text-align: justify; 
+    padding: 0 10px;
+}
+.upcoming{
+    margin-top: 30px;
+    padding: 10px 0; 
+    text-align: center; 
+    text-transform: uppercase;
+}
+.width{
+    width: 100%;
+}
+.button{
+    width: 23%;
+    height: 50px;
+    float: left;
+    margin: 5px;
+    border-radius: 2px;
+    background-color: snow;
+    color: rgb(92, 195, 226);
+    line-height: 50px;
+    text-align: left;
+    font-size: 1vw;
+    cursor: pointer;   
+}
+.button:hover{
+    box-shadow: -13px 14px 7px -5px rgba(34, 60, 80, 0.2);
+    text-decoration: underline;
+    color: rgb(14, 14, 136);
+}
+.table {
+    color: rgb(92, 195, 226);
+    cursor: pointer;
+}
+.table:hover {
+    color: rgb(14, 14, 136);
+}
+.colomn {
+    border: 1px solid rgb(81, 194, 81);
+    background-color: rgb(81, 194, 81);
+    cursor: pointer;
+    color: white;
+    width: 150px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 3px;
+}
+.colomn:hover {
+    background-color: rgb(24, 83, 24);
+}
+.colomn2 {
+    border: 1px solid rgb(94, 169, 194);
+    background-color: rgb(247, 238, 238);
+    cursor: pointer;
+    color: rgb(90, 195, 226);
+    width: 150px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 3px;
+}
+.colomn2:hover {
+    background-color: rgb(202, 196, 196);
+}
