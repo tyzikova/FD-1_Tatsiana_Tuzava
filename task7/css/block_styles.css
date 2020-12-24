@@ -3,6 +3,9 @@
     margin-right: 10px;
     
 }
+.clear{
+    clear: both;
+}
 .position_span{
     display: flex; 
 }
