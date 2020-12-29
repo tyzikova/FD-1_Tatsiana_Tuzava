@@ -1,0 +1,81 @@
+.position_div{
+    float: left; 
+    margin-right: 10px;
+    
+}
+.clear{
+    clear: both;
+}
+.position_span{
+    display: flex; 
+}
+.table{
+    background-color: green; 
+    width: 200px; 
+    height: 200px; 
+    overflow: hidden;
+}
+.td{
+    background-color: blue; 
+    color: white; 
+    width: 50%; 
+    height: 50%; 
+    vertical-align: text-top;
+}
+.green{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    display: table-cell;
+    vertical-align: middle;
+}
+.blue{
+    background-color: blue;
+    width: 50%;
+    height: 50%;
+    color: white;
+    margin: 0 auto;
+    
+}
+.inline{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    display: inline-block;
+    margin-top: 10px;
+}
+.block{
+    background-color: blue;
+    width: 50%;
+    height: 50%;
+    color: white;
+    margin: 0 auto;
+    margin-top: 25%;
+}
+.green_span{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blue_span{
+    background-color: blue;
+    color: white;
+}
+.div_transform{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    margin-left: 10px;
+    position: relative;
+}
+.span_transform{
+    background-color: blue;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
