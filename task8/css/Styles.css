@@ -176,19 +176,18 @@ tr{
 }
 .feedback{
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     margin: 10px;
 }
 .feedback:hover{
     box-shadow: -13px 14px 7px -5px rgba(34, 60, 80, 0.2);
-    transform: scale(1.01);
-    transition: 1s;
 }
 .avatar{
     float: left; 
     overflow: hidden; 
     border-radius: 100%; 
     margin: 10px;
+    padding-right: 10px;
 }
 .avatar:hover{
     transform: scale(1.2);
@@ -197,21 +196,22 @@ tr{
 .card_course{
     display: block;
     color: #706f6f;
-    margin-top: 10px;
     text-decoration: none;
+    padding-top: 15px;
 }
 .card_name{
     font-size: 20px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 10px;
+    padding: 10px;
 }
 .card_footer{
     font-size: 12px;
-    padding: 5px;
-    margin: 5px;
+    padding: 0px;
+    margin: 0px;
 }
 .card_footer_link{
-    margin: 15px;
+    margin: 10px;
     color: blue;
     text-decoration: none;
 }
@@ -226,4 +226,21 @@ tr{
 background-position: -100%;
 cursor: pointer;
 font-weight: bold;
+}
+.text_feedback{
+    overflow: hidden;
+	position: relative;
+    height: 45px;
+    line-height: 25px;
+}
+.text_feedback:after{
+    content: "";
+	text-align: justify;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 45px;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white 100%);
+	pointer-events: none;
 }
