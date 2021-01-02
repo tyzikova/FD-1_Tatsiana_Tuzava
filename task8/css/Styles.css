@@ -227,6 +227,7 @@ tr{
     overflow: hidden;
     margin-top: 20px;
     line-height: 25px;
+    text-align: justify;
 }
 .text_feedback:after{
     content: "";
