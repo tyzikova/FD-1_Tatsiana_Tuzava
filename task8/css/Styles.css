@@ -170,8 +170,8 @@ tr{
 }
 .feedback{
     background-color: white;
-    padding: 30px;
-    margin: 20px 8px;
+    padding: 25px;
+    margin: 20px 8px 8px;
 }
 .feedback:hover{
     box-shadow: -13px 14px 7px -5px rgba(34, 60, 80, 0.2);
