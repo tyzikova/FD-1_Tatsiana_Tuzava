@@ -326,13 +326,13 @@ tr{
     }
     /*need help*/
     
-    footer a[href^="https://www.youtube.com/channel/UCtoTLSamEDXZ-9K3rqR6nww"]{
+    a footer[title="YouTube"]{
         background-position: -30px top;
     }
-    footer a[href^="https://www.instagram.com/itacademy.gomel"]{
+    footer a[href*="https://www.instagram.com/itacademy.gomel"]{
         background-position: -45px top;
     }
-    footer a[href^="https://www.linkedin.com/checkpoint/challengesV2/AQFLIGWmvrpPXAAAAXZb4J_LH8rgwUisz5W-_p4BEAHKau-EXHnWtymptHX13kKLw-zK1RgyCXyLcL-ax8d0I3OZqFA4zQCCbQ?original_referer=https%3A%2F%2Fwww.gomel.it-academy.by%2F"]{
+    footer a[href*="https://www.linkedin.com/checkpoint/challengesV2/AQFLIGWmvrpPXAAAAXZb4J_LH8rgwUisz5W-_p4BEAHKau-EXHnWtymptHX13kKLw-zK1RgyCXyLcL-ax8d0I3OZqFA4zQCCbQ?original_referer=https%3A%2F%2Fwww.gomel.it-academy.by%2F"]{
         background-position: -60px top;
     }
     /*need help*/
