@@ -172,8 +172,9 @@ tr{
 }
 .feedback{
     background-color: white;
-    padding: 25px;
-    margin: 20px 8px 8px;
+    padding: 20px;
+    margin: 15px 8px 8px;
+    border-radius: 10px;
 }
 .feedback:hover{
     box-shadow: -13px 14px 7px -5px rgba(34, 60, 80, 0.2);
@@ -194,6 +195,7 @@ tr{
     color: #706f6f;
     text-decoration: none;
     padding-top: 15px;
+    max-width: 400px;
 }
 .card_name{
     font-size: 24px;
@@ -209,19 +211,6 @@ tr{
     color: blue;
     text-decoration: none;
 }
-.fan{
-    background-image: -webkit-linear-gradient(left, #f2f2f2 50%, #1877CC 50%);
-    background-image: linear-gradient(to right, #f2f2f2 50%, #1877CC 50%);
-    background-size: 200%;
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
-}
-.fan:hover{
-    background-position: -100%;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 3px;
-}
 .text_feedback{
     max-height: 100px;
     overflow: hidden;
@@ -229,11 +218,11 @@ tr{
     line-height: 25px;
     text-align: justify;
 }
-.text_feedback:after{
+.text_feedback:before{
     content: "";
     display: block;
     height: 20px;
     position: relative;
-    top: 80px;
+    top: 73px;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 75%)
 }
