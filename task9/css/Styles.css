@@ -252,13 +252,13 @@ tr{
     border: 2px solid darkgrey;
     width: 600px;
     height: 400px;
-    overflow: auto;
+    overflow: hidden;
     position: relative;
     margin: 5% auto;
     padding: 5px 20px 10px 20px;
     border-radius: 10px;
     background: white;
-     text-align: justify;
+    text-align: justify;
 }
 .close{
     color: gray;
