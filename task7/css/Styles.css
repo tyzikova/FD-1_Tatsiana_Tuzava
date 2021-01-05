@@ -1,6 +1,5 @@
 body{
     margin: 0px; 
-    padding: 0px; 
     font-family: Roboto, sans-serif;
 }
 header {
@@ -15,7 +14,6 @@ header a{
     text-decoration: none; 
     padding: 5px; 
     margin: 10px; 
-    background-color: rgba(192, 192, 192, 0.2);
 }
 footer {
     background-color: rgb(207, 209, 208);
@@ -39,10 +37,11 @@ hr{
 }
 table{
     width: 100%; 
-    background-color: snow; 
+    background-color: white; 
     padding: 5px; 
     margin-bottom: 5px; 
     table-layout: fixed;
+    border-radius: 3px;
 }
 td{
     text-align: left;
@@ -50,9 +49,9 @@ td{
 tr{
     height: 50px;
 }
-.td{
+.part_table{
     text-align: right;
-     width: 200px;
+    width: 200px;
 }
 .div-image{
     min-height: calc(100vh - 40px);
@@ -64,85 +63,90 @@ tr{
     display: flex; 
     align-items: center;
 }
-.div{
-    font-size: 54px; 
+.primary_title{
+    font-size: 80px; 
     font-weight: bold; 
     color: white; 
-    margin-left: 200px;
+    margin-left: 100px;
+    letter-spacing: 2px;
 }
 .inmain{
     background-color: rgb(207, 209, 208); 
     padding: 5px;
 }
 .trainings{
-    padding-top: 10px;
+    padding-top: 20px;
     text-align: center; 
     font-weight: bold; 
     text-transform: uppercase; 
     margin-top: 15px;
+    letter-spacing: 2px;
 }
 .text{
-    text-indent: 25px; 
     text-align: justify; 
     padding: 0 10px;
+    line-height: 25px;
 }
-.upcoming{
-    margin-top: 30px;
-    padding: 10px 0; 
-    text-align: center; 
-    text-transform: uppercase;
-}
-.width{
-    width: 100%;
-}
-.button{
-    width: 23%;
+.programs_demanted{
+    min-width: 250px;
+    padding: 0 20px;
     height: 50px;
     float: left;
     margin: 5px;
-    border-radius: 2px;
-    background-color: snow;
-    color: rgb(92, 195, 226);
+    border-radius: 3px;
+    background-color: white; 
+    color:#1877CC;
     line-height: 50px;
-    text-align: left;
-    font-size: 1vw;
+    text-align: center;
     cursor: pointer;   
 }
-.button:hover{
-    box-shadow: -13px 14px 7px -5px rgba(34, 60, 80, 0.2);
+.programs_demanted:hover{
+    box-shadow: -10px 0px 13px -7px #645f5f, 10px 0px 13px -7px #b9aeae, 
+    inset -7px 4px 15px -3px rgba(177, 165, 165, 0);
     text-decoration: underline;
-    color: rgb(14, 14, 136);
+    transition: 1s;
+    color: rgb(12, 12, 110);
+    transform: scale(1.05);
+    border-radius: 3px;
 }
 .table {
-    color: rgb(92, 195, 226);
+    color:#1877CC;
     cursor: pointer;
 }
 .table:hover {
     color: rgb(14, 14, 136);
 }
 .colomn {
-    border: 1px solid rgb(81, 194, 81);
-    background-color: rgb(81, 194, 81);
+    display: inline-block;
+    border: 1px solid rgb(73, 211, 73);
+    background-color: rgb(33, 139, 33);
     cursor: pointer;
     color: white;
     width: 150px;
     height: 30px;
+    line-height: 30px;
     margin: 5px;
     border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
 }
 .colomn:hover {
-    background-color: rgb(24, 83, 24);
+    background-color:  rgb(73, 211, 73);
 }
 .colomn2 {
+    display: inline-block;
     border: 1px solid rgb(94, 169, 194);
     background-color: rgb(247, 238, 238);
     cursor: pointer;
-    color: rgb(90, 195, 226);
+    color:#1877CC;
     width: 150px;
     height: 30px;
+    line-height: 30px;
     margin: 5px;
     border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
 }
 .colomn2:hover {
-    background-color: rgb(202, 196, 196);
+    background-color: white;
 }
