@@ -1,0 +1,152 @@
+body{
+    margin: 0px; 
+    font-family: Roboto, sans-serif;
+}
+header {
+    background-color: black;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+header a{
+    color: white;
+    text-decoration: none; 
+    padding: 5px; 
+    margin: 10px; 
+}
+footer {
+    background-color: rgb(207, 209, 208);
+    height: 50px;
+    padding-top: 5px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+footer a {
+    background-image: url(../images/sprites2.png);
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-left: 10px;
+}
+hr{
+    margin: 10px; 
+    color: lightgray;
+}
+table{
+    width: 100%; 
+    background-color: white; 
+    padding: 5px; 
+    margin-bottom: 5px; 
+    table-layout: fixed;
+    border-radius: 3px;
+}
+td{
+    text-align: left;
+}
+tr{
+    height: 50px;
+}
+.part_table{
+    text-align: right;
+    width: 200px;
+}
+.div-image{
+    min-height: calc(100vh - 40px);
+    background-image: url(../images/pexels-photo-583846.jpeg); 
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    display: flex; 
+    align-items: center;
+}
+.primary_title{
+    font-size: 80px; 
+    font-weight: bold; 
+    color: white; 
+    margin-left: 100px;
+    letter-spacing: 2px;
+}
+.inmain{
+    background-color: rgb(207, 209, 208); 
+    padding: 5px;
+}
+.trainings{
+    padding-top: 20px;
+    text-align: center; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    margin-top: 15px;
+    letter-spacing: 2px;
+}
+.text{
+    text-align: justify; 
+    padding: 0 10px;
+    line-height: 25px;
+}
+.programs_demanted{
+    min-width: 250px;
+    padding: 0 20px;
+    height: 50px;
+    float: left;
+    margin: 5px;
+    border-radius: 3px;
+    background-color: white; 
+    color:#1877CC;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;   
+}
+.programs_demanted:hover{
+    box-shadow: -10px 0px 13px -7px #645f5f, 10px 0px 13px -7px #b9aeae, 
+    inset -7px 4px 15px -3px rgba(177, 165, 165, 0);
+    text-decoration: underline;
+    transition: 1s;
+    color: rgb(12, 12, 110);
+    transform: scale(1.05);
+    border-radius: 3px;
+}
+.table {
+    color:#1877CC;
+    cursor: pointer;
+}
+.table:hover {
+    color: rgb(14, 14, 136);
+}
+.colomn {
+    display: inline-block;
+    border: 1px solid rgb(73, 211, 73);
+    background-color: rgb(33, 139, 33);
+    cursor: pointer;
+    color: white;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    margin: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+}
+.colomn:hover {
+    background-color:  rgb(73, 211, 73);
+}
+.colomn2 {
+    display: inline-block;
+    border: 1px solid rgb(94, 169, 194);
+    background-color: rgb(247, 238, 238);
+    cursor: pointer;
+    color:#1877CC;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    margin: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+}
+.colomn2:hover {
+    background-color: white;
+}
