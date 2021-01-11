@@ -258,8 +258,9 @@ tr{
 }
 .modal > div{
     border: 2px solid darkgrey;
-    width: 600px;
-    height: 400px;
+    width: 80vw;
+    max-width: 1260px;
+    max-height: 80vw;
     overflow: hidden;
     position: relative;
     margin: 5% auto;
