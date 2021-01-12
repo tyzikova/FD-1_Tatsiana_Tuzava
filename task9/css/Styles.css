@@ -263,7 +263,7 @@ tr{
     max-height: 80vw;
     overflow: hidden;
     position: relative;
-    margin: 5% auto;
+    margin: 15px auto;
     padding: 5px 20px 10px 20px;
     border-radius: 10px;
     background: white;
@@ -285,17 +285,21 @@ tr{
     }
     header, footer{
         font-size: 2.3vh;
-        line-height: 0.8rem;
+        line-height: 0.75rem;
     }
     img{
         width: 25%;
+    }
+    .text{
+        line-height: 1.2rem;
     }
     .table{
          font-size: 2.5vh;
     }
     td{
-        text-align: center;
+        text-align: left;
         padding: 0 8px;
+        line-height: 1.2rem;
     }
     .part_table{
         max-width: 80px;
@@ -325,6 +329,7 @@ tr{
     .text_feedback{
         max-height: 80px;
         margin-top: 5px;
+        line-height: 1.1rem;
     }
     .text_feedback:before{
         height: 15px;
@@ -348,5 +353,8 @@ tr{
     .modal > div{
         width: 250px;
         height: 350px;
+        font-size: 2.5vh;
+        line-height: 1.2rem;
+
     }
 }
