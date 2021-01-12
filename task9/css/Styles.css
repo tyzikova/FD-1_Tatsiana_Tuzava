@@ -82,7 +82,7 @@ tr{
 }
 .div_background{
     min-height: calc(100vh - 40px);
-    background-image: url(../images/pexels-photo-583846.jpeg); 
+    background-image: url(../images/original.jpg); 
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -311,8 +311,10 @@ tr{
         left: -40px;
         bottom: 40px;
     }
-    .div_background img{ /* need help*/
+    .div_background{ /* need help*/
+        background-image: url(../images/for_adapt320.png);
         max-width: 100%;
+        height: auto;
     }
     .card_name{
         font-size: 12px;
