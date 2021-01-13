@@ -292,7 +292,7 @@ tr{
 }
 @media only screen and (max-width: 800px){
 body{
-    font-size: 2.7vh;
+    font-size: 2.3vh;
 }
 .div_background div{
     font-size: 44px;
@@ -302,7 +302,7 @@ body{
 }
 @media only screen and (max-width: 440px){
 body{
-    font-size: 2.6vh;
+    font-size: 2.3vh;
 }
 header{
     font-size: 14px;
@@ -369,10 +369,10 @@ footer a.sprite_LinkedIn{
 } 
 @media only screen and (max-width: 320px){
     body{
-        font-size: 2.3vh;
+        font-size: 2.2vh;
     }
     footer{
-        font-size: 2.3vh;
+        font-size: 2.2vh;
         line-height: 0.75rem;
     }
     img{
