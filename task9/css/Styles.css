@@ -298,16 +298,22 @@ tr{
     }
 }
 @media only screen and (max-width: 440px){
+header{
+    font-size: 14px;
+}
 header nav{
     position: relative;
     min-height: 30px;
 }
 header nav ul{
-    width: 100px;
+    width: 145px;
     padding: 5px 0;
     position: absolute;
     top: 0;
     left: 0;
+    border: solid 1px grey;
+    border-radius: 3px;
+    background-color: black;
 }
 header nav ul li{
     display: none;
@@ -326,6 +332,9 @@ header nav ul:hover li{
     margin: 0 0 10px;
     transition: 2s;
 }
+header nav li > a:hover{
+    color: #1877CC;
+}       
 header nav.left ul{
     right: auto;
     left: 0;
