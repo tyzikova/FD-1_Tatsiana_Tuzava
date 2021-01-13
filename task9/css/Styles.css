@@ -9,11 +9,23 @@ header{
     align-items: center;
     padding: 5px;
 }
-header > a{
+header nav{
+    position: relative;
+    margin: 10px 0;
+}
+header nav ul{
+    margin: 0;
+    padding: 0;
+   }
+header nav li{
+    margin: 0 5px 5px 0;
+    list-style: none;
+    display: inline-flex;
+   }
+header nav ul li > a{
     color: white;
     text-decoration: none; 
-    padding: 5px; 
-    margin: 10px;
+    padding: 8px; 
 }
 footer{
     background-color: #f2f2f2;
@@ -279,11 +291,72 @@ tr{
     width: 30px;
     text-decoration: none;
 }
-@media (max-width: 320px){
+@media only screen and (max-width: 800px){
+.div_background div{
+    font-size: 2.5rem;
+    padding-left: 20px;
+    }
+}
+@media only screen and (max-width: 440px){
+header nav{
+    position: relative;
+    min-height: 30px;
+}
+header nav ul{
+    width: 100px;
+    padding: 5px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header nav ul li{
+    display: none;
+    margin: 0;
+}
+header nav ul li:first-child{
+    display: block;
+}
+header nav ul  > a {
+    display: block;
+    padding: 5px 5px 5px 2px;
+    text-align: left;
+    }
+header nav ul:hover li{
+    display: block;
+    margin: 0 0 10px;
+    transition: 2s;
+}
+header nav.left ul{
+    right: auto;
+    left: 0;
+}
+.div_background div{
+    font-size: 2.2rem;
+    position: relative;
+    left: -35px;
+    }
+footer a{
+    background-color: #f2f2f2;
+    background-image: url(../images/320_px.png);
+    width: 15px;
+    height: 15px;
+    margin-left: 8px;
+}
+footer a.sprite_YouTube{
+    background-position: -30px top;
+}
+footer a.sprite_Instagram{
+    background-position: -45px top;
+}
+footer a.sprite_LinkedIn{
+    background-position: -60px top;
+}
+}
+@media only screen and (max-width: 320px){
     body{
         font-size: 2.5vh;
     }
-    header, footer{
+    footer{
         font-size: 2.3vh;
         line-height: 0.75rem;
     }
@@ -314,11 +387,6 @@ tr{
         position: relative;
         left: -40px;
         bottom: 40px;
-    }
-    .div_background{ /* need help*/
-        background-image: url(../images/for_adapt320.png);
-        max-width: 100%;
-        height: auto;
     }
     .card_name{
         font-size: 12px;
