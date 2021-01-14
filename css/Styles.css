@@ -263,6 +263,7 @@ tr{
     left: 0;
     background-color: rgba(172, 169, 169, 0.6);
     display: none;
+    z-index: 1;
 }
 .modal:target{
     display: block;
@@ -362,7 +363,6 @@ header nav ul  > a {
 header nav ul:hover li{
     display: block;
     margin: 0 0 10px;
-    transition: 2s;
 }
 header nav li > a:hover{
     color: #1877CC;
