@@ -279,6 +279,7 @@ tr{
     border-radius: 10px;
     background: white;
     text-align: justify;
+    z-index: 1;
 }
 .close{
     color: gray;
@@ -346,6 +347,7 @@ header nav ul{
 header nav ul li{
     display: none;
     margin: 0;
+    
 }
 header nav ul li:first-child{
     display: block;
@@ -354,11 +356,11 @@ header nav ul  > a {
     display: block;
     padding: 5px 5px 5px 2px;
     text-align: left;
-    }
+    
+}
 header nav ul:hover li{
     display: block;
     margin: 0 0 10px;
-    transition: 2s;
 }
 header nav li > a:hover{
     color: #1877CC;
