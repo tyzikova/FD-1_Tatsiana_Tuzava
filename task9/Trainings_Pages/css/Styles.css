@@ -263,6 +263,7 @@ tr{
     left: 0;
     background-color: rgba(172, 169, 169, 0.6);
     display: none;
+	z-index: 1;
 }
 .modal:target{
     display: block;
@@ -279,7 +280,6 @@ tr{
     border-radius: 10px;
     background: white;
     text-align: justify;
-    z-index: 1;
 }
 .close{
     color: gray;
