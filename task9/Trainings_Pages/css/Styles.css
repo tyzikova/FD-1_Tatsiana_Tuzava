@@ -116,11 +116,11 @@ tr{
 .trainings{
     padding-top: 20px;
     text-align: center;
-	font-size: 20px;
+    font-size: 20px; 
     font-weight: bold; 
     text-transform: uppercase; 
     margin-top: 15px;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
 .text{
     text-align: justify; 
@@ -263,7 +263,7 @@ tr{
     left: 0;
     background-color: rgba(172, 169, 169, 0.6);
     display: none;
-	z-index: 1;
+    z-index: 1;
 }
 .modal:target{
     display: block;
@@ -291,12 +291,19 @@ tr{
     width: 30px;
     text-decoration: none;
 }
+.dm-modal{ 
+    height: 400px;
+    overflow: auto;
+}
 @media only screen and (max-width: 800px){
 body{
     font-size: 12px;
 }
 .table{
     font-size: 14px;
+}
+.div_background{
+	background-position: left center;
 }
 td{
    text-align: left;
@@ -322,11 +329,14 @@ td{
 .modal > div{
     overflow: auto;
 }
-}
+}   
 @media only screen and (max-width: 440px){
 body{
     font-size: 12px;
 }
+.div_background{
+    background-position: left center;
+} 
 header{
     font-size: 14px;
 }
@@ -347,16 +357,13 @@ header nav ul{
 header nav ul li{
     display: none;
     margin: 0;
-    
 }
 header nav ul li:first-child{
     display: block;
 }
 header nav ul  > a {
     display: block;
-    padding: 5px 5px 5px 2px;
-    text-align: left;
-    
+    padding: 5px;
 }
 header nav ul:hover li{
     display: block;
@@ -391,7 +398,7 @@ td{
     font-size: 40px;
     position: relative;
     left: -35px;
-    }
+ }
 footer a{
     background-color: #f2f2f2;
     background-image: url(../images/320_px.png);
@@ -407,7 +414,7 @@ footer a.sprite_Instagram{
 }
 footer a.sprite_LinkedIn{
     background-position: -60px top;
-}
+    }
 } 
 @media only screen and (max-width: 320px){
     body{
@@ -416,10 +423,7 @@ footer a.sprite_LinkedIn{
     footer{
         font-size: 12px;
         line-height: 0.75rem;
-    }
-	.div_background{
-        background-image: url(../images/for_adaptive.jpg); 
-        } 
+}  
     img{
         width: 25%;
     }
@@ -445,7 +449,6 @@ footer a.sprite_LinkedIn{
         font-size: 40px;
         position: relative;
         left: -35px;
-        
     }
     .card_name{
         font-size: 12px;
@@ -478,8 +481,6 @@ footer a.sprite_LinkedIn{
         background-position: -60px top;
     }
     .modal > div{
-        width: 250px;
-        height: 350px;
         font-size: 12px;
         line-height: 1.2rem;
     }
