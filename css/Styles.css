@@ -291,8 +291,7 @@ tr{
     width: 30px;
     text-decoration: none;
 }
-.dm-modal{
-    overflow: auto; 
+.dm-modal{ 
     height: 400px;
 }
 @media only screen and (max-width: 800px){
@@ -301,6 +300,9 @@ body{
 }
 .table{
     font-size: 14px;
+}
+.div_background{
+	background-position: left center;
 }
 td{
    text-align: left;
@@ -331,6 +333,9 @@ td{
 body{
     font-size: 12px;
 }
+.div_background{
+    background-position: left center;
+} 
 header{
     font-size: 14px;
 }
@@ -357,9 +362,8 @@ header nav ul li:first-child{
 }
 header nav ul  > a {
     display: block;
-    padding: 5px 5px 5px 2px;
-    text-align: left;
-    }
+    padding: 5px;
+}
 header nav ul:hover li{
     display: block;
     margin: 0 0 10px;
@@ -418,10 +422,7 @@ footer a.sprite_LinkedIn{
     footer{
         font-size: 12px;
         line-height: 0.75rem;
-    }
-    .div_background{
-        background-image: url(../images/for_adaptive.jpg); 
-        }    
+}  
     img{
         width: 25%;
     }
