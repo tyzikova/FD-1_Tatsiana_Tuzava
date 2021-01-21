@@ -93,7 +93,7 @@ main{
     border-bottom: 4px solid darkorange;
     display: flex;
     flex-direction: column;
-    height: 250px;
+    height: 300px;
     background-image: url(images/big-orange-bg.png); 
     background-position: center center;
     background-size: cover;
@@ -230,7 +230,7 @@ main{
     font-family: open_font; 
     font-weight: bold; 
     font-size: 24px;
-	border-radius: 5px;
+    border-radius: 5px;
 }
 footer{
     width: 100%;
@@ -334,11 +334,14 @@ footer > div{
 main{
     font-size: 14px;
 }
-.flex_element_form > div:first-child, .flex_element_button > button{
-    font-size: 14px;
+.flex_element_form{
+    display: flex;
+    flex-direction: column;
 }
-.flex_element_form > div:last-child{
-    font-size: 10px;
+.flex_element_form .flex_element_button{
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
 }
 footer > div{
     font-size: 14px;
