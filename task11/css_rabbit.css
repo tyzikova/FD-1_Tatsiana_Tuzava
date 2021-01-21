@@ -340,7 +340,6 @@ main{
 }
 .flex_element_form .flex_element_button{
     display: flex;
-    justify-content: flex-end;
     align-self: flex-end;
 }
 footer > div{
