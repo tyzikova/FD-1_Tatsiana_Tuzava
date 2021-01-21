@@ -59,6 +59,7 @@ header{
     flex-grow: 1;
     font-size: 20px;
     opacity: .6;
+    text-decoration: none;
 }
 .icons nav{
     position: relative;
@@ -66,15 +67,22 @@ header{
 }
 .icons nav ul li:first-child{
     display: none;
+    text-align: center;
+    cursor: pointer;
 }
 .icons nav ul li{
     list-style: none;
     display: inline-block;
 }
-.icons nav ul li > div{
+.icons nav ul li a > div{
     margin: 0 15px 0 15px;
     text-align: center;
     cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+.icons nav ul li a:hover{
+    text-decoration: none;
 }
 main{
     width: 100%;
@@ -243,6 +251,7 @@ footer > div{
 .true_font{
     font-family: True_font;
 }
+
 @media screen and (max-width: 800px){
 .icons{
     font-size: 14px;
@@ -295,8 +304,8 @@ footer > div{
     display: block;
     margin: 0 0 10px;
 }
-.icons nav li:hover{
-    color: orange;
+.icons nav ul li a:hover{
+    text-decoration: none;
     }
 }
 @media screen and (max-width: 650px){
@@ -318,7 +327,7 @@ footer > div{
     width: 50px;
     font-size: 12px;
 }
-.icons nav ul li > div{
+.icons nav ul li a > div{
     margin: 0;
 }    
 main{
@@ -338,7 +347,7 @@ footer > div{
 main, .info_text{
     font-size: 12px;
 }
-    .primary_title{
+.primary_title{
     font-size: 24px;
 }
 .div_background > div:nth-child(1), 
