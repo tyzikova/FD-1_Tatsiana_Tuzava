@@ -36,6 +36,8 @@ header{
     margin: 5px 0 0 0;
     width: 100px;
     background: url(images/rabbit-mouth.png) no-repeat;
+    background-size: 75px;
+    background-position: center center;
     cursor: pointer;
 }
 .logo_title{
@@ -57,7 +59,6 @@ header{
     justify-content: flex-end;
     align-items: center;        
     flex-grow: 1;
-    font-size: 20px;
     opacity: .6;
     text-decoration: none;
 }
@@ -254,9 +255,6 @@ footer > div{
 }
 
 @media screen and (max-width: 800px){
-.icons{
-    font-size: 14px;
-}
 .info_text{
     display: inline-block;
     font-size: 14px;
@@ -268,6 +266,10 @@ footer > div{
 @media screen and (max-width: 720px){
 .header_container{
     height: 115px;
+}
+.logo{
+    width: 85px;
+    background-size: 65px;
 }
 .icons{
     opacity: 1;
@@ -347,6 +349,15 @@ footer > div{
     }
 }
 @media screen and (max-width: 440px){
+.logo{
+    width: 75px;
+    background-size: 55px;
+    }  
+.logo_title{
+    font-size: 18px;
+    margin-right: 40px;
+    padding-top: 20px;
+} 
 main, .info_text{
     font-size: 12px;
 }
