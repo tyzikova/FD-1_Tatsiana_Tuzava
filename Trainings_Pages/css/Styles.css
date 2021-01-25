@@ -28,6 +28,9 @@ header nav ul li > a{
     text-decoration: none; 
     padding: 8px; 
 }
+header nav ul li > a:hover{
+    color: #1877CC;
+}
 .header_element{
     display: flex;
     flex-direction: row;
@@ -37,6 +40,9 @@ header nav ul li > a{
     border-radius: 3px;
     padding: 5px 0;
     margin: 5px;
+}
+.header_element > div a:hover{
+    color: #1877CC;
 }
 header div > a{
     color: white;
@@ -351,7 +357,7 @@ tr{
 }
 h2{
     margin-bottom: 25px;
-    font-family: Roboto;
+    font-family: sans-serif;
     font-size: 40px;
     text-align: center;
     color: gray;
@@ -510,7 +516,7 @@ h1{
 }
 .forms_element > div:first-child, div:last-child{
     margin: 0;
-    }
+}
 .primary_title > div{
     margin-left: 150px;
     display: flex;
