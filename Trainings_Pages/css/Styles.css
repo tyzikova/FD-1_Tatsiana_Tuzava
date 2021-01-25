@@ -377,6 +377,7 @@ h2{
 }
 .forms_element{
     display: flex;
+    align-items: center;
     margin: 10px 0;
     width: 100%;
 }
