@@ -11,7 +11,13 @@ input[type="radio"]{
 #tab2:checked ~ .tabs > form:last-child{
     display: block;
 }
-
+label[for="tab1"], label[for="tab2"]{
+    margin: 15px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold; 
+    color: #1877CC;
+}
 .container_sign_in{
     min-height: 100vh;
     display: flex;
@@ -102,6 +108,9 @@ h2{
     font-family: sans-serif;
     color: gray;
 }
+.forms_element_radio div label > input{
+    display: inline-flex;
+}
 .forms_element_footer{
     display: flex;
     justify-content: center;
@@ -137,10 +146,11 @@ h2{
 }
 @media only screen and (max-width: 550px){ 
 .container_sign_in{
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .container_element{
-    min-width: 300px;
+    min-width: 400px;
+    margin-top: 25px;
 }
 .icon{
     font-size: 50px;
@@ -150,15 +160,13 @@ h1{
 }
 .forms_element{
     display: flex;
-    flex-direction: column;
-}
-.forms_element > div:first-child, div:last-child{
-     margin: 0;
+    align-items: center;
+    margin: 0;
     }
-} 
-@media only screen and (max-width: 450px){ 
+}
+@media only screen and (max-width: 460px){ 
 .container_element{
-    min-width: 250px;
+    min-width: 350px;
 } 
 .forms_element_footer{
     display: flex;
@@ -172,12 +180,21 @@ h1{
     font-size: 12px;
     }
 }
+@media only screen and (max-width: 400px){ 
+.container_element{
+    min-width: 300px;
+    padding: 15px 10px 15px;
+    }
+}
+@media only screen and (max-width: 340px){ 
+.container_element{
+    min-width: 270px;
+    padding: 15px 10px 15px;
+    }
+}  
 @media only screen and (max-width: 360px){ 
 .container_element{
     min-width: 200px;
     padding: 15px 10px 15px;
-}
-.forms_element_button > button{
-     font-size: 16px;
     }
 }

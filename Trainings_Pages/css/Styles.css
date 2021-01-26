@@ -318,47 +318,45 @@ tr{
 .dm-modal{ 
     height: 400px;
 }
-/* for modal in header*/
-.primary_container{
-    margin: 0 auto;
-    width: 100%;
-}
-.modal_form{
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(172, 169, 169, 0.6);
-    z-index: 1;
+/* for tab in header*/
+.tabs > form{
     display: none;
-    overflow-x: auto;
 }
-.modal_form:target{
+input[type="radio"]{
+    display: none;
+}
+#tab1:checked ~ .tabs > form:first-child,
+#tab2:checked ~ .tabs > form:last-child{
     display: block;
 }
-.modal_form > div:first-child{
-    border: 2px solid darkgrey;
-    width: 450px;
-    max-width: 1260px;
-    min-height: 65vh;
-    overflow: hidden;
-    position: relative;
-    margin: 50px auto;
-    padding: 5px 20px 10px 20px;
-    border-radius: 10px;
-    background: white;
+label[for="tab1"], label[for="tab2"]{
+    margin: 15px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold; 
+    color: #1877CC;
+}
+.container_sign_in{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
 }
 .container_element{
     min-width: 400px;
+    overflow: hidden;
+    margin-top: 50px;
     padding: 30px 20px 30px;
     background-color: white;
+    border-radius: 10px;
     font-family: sans-serif;
     font-weight: bold;
 }
 h2{
     margin-bottom: 25px;
-    font-family: sans-serif;
+    font-family: Roboto;
     font-size: 40px;
     text-align: center;
     color: gray;
@@ -370,14 +368,13 @@ h2{
     text-align: center;
     color: #1877CC;
     cursor: pointer;
-    transition: 1s;
 }
 .icon:hover{
     color: rgb(73, 211, 73);
-    transform: scale(1.2);
 }
 .forms_element{
     display: flex;
+    align-items: center;
     margin: 10px 0;
     width: 100%;
 }
@@ -392,7 +389,7 @@ h2{
     margin: 20px 0;
 }
 .forms_element [type]{
-    width: 95%;
+    width: 100%;
     height: 20px;
     background-color: #f2f2f2;
 }
@@ -428,6 +425,9 @@ h2{
     margin: 20px 0;
     font-family: sans-serif;
     color: gray;
+}
+.forms_element_radio div label > input{
+    display: inline-flex;
 }
 .forms_element_footer{
     display: flex;
@@ -493,38 +493,34 @@ td{
     font-size: 44px;
     position: relative;
     left: -35px;
-    }
+}
 .modal > div{
     overflow: auto;
     }
 }
 @media only screen and (max-width: 550px){ 
 .container_element{
-     min-width: 200px;
-}
-.modal_form > div:first-child{
-    width: 300px;
+    min-width: 400px;
+    margin-top: 25px;
 }
 .icon{
-     font-size: 50px;
+    font-size: 50px;
 }
-h1{
+h2{
     font-size: 30px;
 }
 .forms_element{
     display: flex;
-    flex-direction: column;
-}
-.forms_element > div:first-child, div:last-child{
+    align-items: center;
     margin: 0;
-    }
+}
 .primary_title > div{
     margin-left: 150px;
     display: flex;
     flex-direction: column;
     }
 }   
-@media only screen and (max-width: 440px){
+@media only screen and (max-width: 460px){
 body{
     font-size: 12px;
 }
@@ -610,7 +606,7 @@ footer a.sprite_LinkedIn{
     background-position: -60px top;
 }
 .container_element{
-    min-width: 250px;
+    min-width: 350px;
 } 
 .forms_element_footer{
     display: flex;
@@ -618,22 +614,22 @@ footer a.sprite_LinkedIn{
     text-align: center;   
 }
 .forms_element_footer > div{
-     margin-top: 10px;
+    margin-top: 10px;
 }
 .forms_element_radio > div{
     font-size: 12px;
     }
 } 
-@media only screen and (max-width: 360px){ 
+@media only screen and (max-width: 400px){ 
 .container_element{
-    min-width: 200px;
+    min-width: 300px;
     padding: 15px 10px 15px;
-}
-.modal_form > div:first-child{
-    width: 250px;
-}
-.forms_element_button > button{
-    font-size: 16px;
+    }
+} 
+@media only screen and (max-width: 340px){ 
+.container_element{
+    min-width: 270px;
+    padding: 15px 10px 15px;
     }
 } 
 @media only screen and (max-width: 320px){
@@ -678,7 +674,7 @@ td{
 }
 .text_feedback{
     max-height: 80px;
-     margin-top: 5px;
+    margin-top: 5px;
     line-height: 1.1rem;
 }
 .text_feedback:before{
