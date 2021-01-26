@@ -35,14 +35,15 @@ header nav ul li > a:hover{
     display: flex;
     flex-direction: row;
 }
-.header_element > div:first-child, .header_element div:last-child{
+.header_element a{
     border: 1px solid white;
     border-radius: 3px;
-    padding: 5px 0;
+    padding: 0 5px;
     margin: 5px;
 }
-.header_element > div a:hover{
+.header_element a:hover{
     color: #1877CC;
+    border-color: #1877CC;
 }
 header div > a{
     color: white;
@@ -377,7 +378,6 @@ h2{
 }
 .forms_element{
     display: flex;
-    align-items: center;
     margin: 10px 0;
     width: 100%;
 }
@@ -517,7 +517,7 @@ h1{
 }
 .forms_element > div:first-child, div:last-child{
     margin: 0;
-}
+    }
 .primary_title > div{
     margin-left: 150px;
     display: flex;
