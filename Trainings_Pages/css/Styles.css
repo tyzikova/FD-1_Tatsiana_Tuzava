@@ -333,9 +333,6 @@ tr{
 #tab2:checked ~ .tabs > form:last-child{
     display: block;
 }
-.tabs .container_sign_in > #tab1:target ~ .forms_element_footer div > a[href="#tab1"]{
-    display: block;
-}
 .primary > label{
     margin: 10px;
 	border: 1px solid lightgray;
