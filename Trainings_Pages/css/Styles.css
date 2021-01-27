@@ -319,10 +319,13 @@ tr{
     height: 400px;
 }
 /* for tab in header*/
+.primary{
+	background-color: #f2f2f2;
+}
 .tabs > form{
     display: none;
 }
-input[type="radio"]{
+.primary > input[type="radio"]{
     display: none;
 }
 #tab1:checked ~ .tabs > form:first-child,
@@ -425,9 +428,6 @@ h2{
     margin: 20px 0;
     font-family: sans-serif;
     color: gray;
-}
-.forms_element_radio div label > input{
-    display: inline-flex;
 }
 .forms_element_footer{
     display: flex;
