@@ -2,8 +2,15 @@ body{
     margin: 0;
 }
 .primary{
-	background-color: #f2f2f2;
-	padding: 10px 0;
+    background-color: #f2f2f2;
+    padding: 30px 0;
+    text-align: center;
+}
+.tabs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
 }
 .tabs > form{
     display: none;
@@ -17,31 +24,21 @@ body{
 }
 .primary > label{
     margin: 10px;
-	border: 1px solid lightgray;
-    border-radius: 3px;
-    background-color: lightgray;
     padding: 5px;
     cursor: pointer;
     font-family: sans-serif;
-    font-weight: bold; 
+    font-weight: bold;
     color: #1877CC;
-}
-.primary > label:hover{
-    background-color: #f2f2f2;
-     border: 1px solid #f2f2f2;
 }
 .container_sign_in{
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 500px;
     background-color: #f2f2f2;
 }
 .container_element{
-    min-width: 400px;
+    max-width: inherit;
     overflow: hidden;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 30px 20px 30px;
     background-color: white;
     border-radius: 10px;
@@ -68,24 +65,28 @@ h2{
 }
 .forms_element{
     display: flex;
-    align-items: center;
-    margin: 10px 0;
     width: 100%;
+    margin: 30px 0;
+    cursor: pointer;
 }
-.forms_element > div:first-child{
+.forms_element > span{
     width: 100px;
     font-family: sans-serif;
     color: gray;
-    margin: 20px 0;
 }
-.forms_element > div:last-child{
+.forms_element > input[type]{
     flex-grow: 1;
-    margin: 20px 0;
-}
-.forms_element [type]{
-    width: 95%;
+    justify-content: flex-end;
     height: 20px;
     background-color: #f2f2f2;
+    color: #1877CC;
+}
+.forms_element > input[type]:focus{
+    border: 2px solid rgb(73, 211, 73);
+    background-color: white;
+    color: #1877CC;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 .forms_element_button{
     width: 100%;
@@ -103,7 +104,7 @@ h2{
     font-size: 24px;
     color: #1877CC;
     cursor: pointer;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     transition: 1s;
 }
 .forms_element_button > button:hover{
@@ -154,29 +155,18 @@ h2{
     transform: scale(1.2);
 }
 @media only screen and (max-width: 550px){ 
-.container_sign_in{
-    margin-top: 20px;
-}
-.container_element{
-    min-width: 400px;
-    margin-top: 25px;
-}
 .icon{
     font-size: 50px;
 }
-h1{
+h2{
     font-size: 30px;
 }
 .forms_element{
     display: flex;
     align-items: center;
-    margin: 0;
     }
 }
-@media only screen and (max-width: 460px){ 
-.container_element{
-    min-width: 350px;
-} 
+@media only screen and (max-width: 460px){  
 .forms_element_footer{
     display: flex;
     flex-direction: column;
@@ -191,19 +181,6 @@ h1{
 }
 @media only screen and (max-width: 400px){ 
 .container_element{
-    min-width: 300px;
-    padding: 15px 10px 15px;
-    }
-}
-@media only screen and (max-width: 340px){ 
-.container_element{
-    min-width: 270px;
-    padding: 15px 10px 15px;
-    }
-}  
-@media only screen and (max-width: 360px){ 
-.container_element{
-    min-width: 200px;
-    padding: 15px 10px 15px;
+    padding: 15px 20px 15px;
     }
 }
