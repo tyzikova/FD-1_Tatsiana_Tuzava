@@ -14,18 +14,18 @@ header{
     position: fixed;
     background-color: honeydew;
     z-index: 1;
+	
 }
 .logo{
     background-image: url("images/logos.png");
     background-repeat: no-repeat;
     background-size: 70%;
     background-position: left center;
-    margin-bottom: 10px;
     cursor: pointer;
 }
 .icons{
     display: flex;
-    justify-content: flex-end;       
+    justify-content: flex-end;
 }
 .icons nav{
     position: relative;
@@ -154,6 +154,9 @@ footer > div{
     font-size: 16px;
     cursor: pointer;
 }
+footer div:last-child{
+	font-size: 20px;
+}
 footer div > span{
     margin-right: 10px;
 }
@@ -166,7 +169,6 @@ footer a > i{
 }
 .icons nav{
     position: relative;
-    min-height: 55px;
 }
 .icons nav ul{
     width: 55px;
@@ -201,5 +203,10 @@ footer a > i{
 @media screen and (max-width: 650px){
 .span_2{
     grid-column: 1;
+    }
+}
+@media screen and (max-width: 450px){
+footer div:first-child{
+    font-size: 13px;
     }
 }
