@@ -79,7 +79,7 @@ main{
 .image_product > img{
     width: 100%;
     height: 100%;
-	border-radius: 5px;
+    border-radius: 5px;
 }
 .description{
     background-color: lightgreen;
@@ -154,6 +154,45 @@ footer div > span{
 footer a > i{
     color: red;
 }
+/* contacts */
+.contacts{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 2fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "map map map"
+    "forms forms info"
+    "forms forms ."
+}
+.map{
+    background-color: #71a866;
+    grid-area: map;
+    border-radius: 5px;
+}
+.forms{
+    background-color: rgb(166, 166, 231);
+    grid-area: forms;
+    border-radius: 5px;
+}
+.info{
+    background-color: rgb(191, 245, 138);
+    grid-area: info;
+    border-radius: 5px;
+    text-align: left;
+    padding: 10px;
+}
+.info > div{
+    text-align: center;
+    color: darkgreen;
+    font-family: 'Lemonada', cursive;
+}
+.info p > i{
+    color: darkgreen;
+    margin-right: 10px;
+}
+/* contacts */
 @media screen and (max-width: 865px){
 .logo{
     background-size: 100%;
@@ -189,6 +228,13 @@ footer a > i{
 .icons nav ul:hover li{
     display: block;
     margin: 0 0 10px;
+}
+.contacts{
+    grid-template-rows: 2fr 1fr 2fr;
+    grid-template-areas:
+    "map map map"
+    "info info info"
+    "forms forms forms";
     }   
 }
 @media screen and (max-width: 650px){
