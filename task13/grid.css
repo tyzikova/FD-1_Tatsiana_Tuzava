@@ -140,15 +140,6 @@ footer{
     position: relative;
     overflow: hidden;
 }
-.telefono{
-    position: absolute;
-    left: 680px;
-    top: -20px;
-    transition: top .5s;
-}
-.tel i:hover ~ .telefono{
-    top: 0;
-}
 footer > div{
     margin: 0 10px;
     font-size: 16px;
