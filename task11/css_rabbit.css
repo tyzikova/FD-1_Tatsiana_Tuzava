@@ -59,7 +59,6 @@ header{
     justify-content: flex-end;
     align-items: center;        
     flex-grow: 1;
-    opacity: .6;
     text-decoration: none;
 }
 .icons nav{
@@ -75,12 +74,12 @@ header{
     list-style: none;
     display: inline-block;
 }
-.icons nav ul li a > div{
+.icons nav ul li a > span{
+    display: block;
     margin: 0 15px 0 15px;
     text-align: center;
     cursor: pointer;
-    text-decoration: none;
-    color: #000;
+    color: gray;
 }
 .icons nav ul li a:hover{
     text-decoration: none;
@@ -296,10 +295,10 @@ footer > div{
     color: darkorange;
 }
 .icons nav ul li:first-child > div:last-child{
-    color: black;
+    color: gray;
     font-weight: bold;
 }
-.icons nav ul > div{
+.icons nav ul > span{
     display: block;
     padding: 5px;
 }
