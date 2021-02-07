@@ -1,0 +1,38 @@
+.green:hover{
+    background-color: green;
+    border: 2px solid green;
+    cursor: pointer;
+    color: white;
+}
+ol.points li{
+    border: 2px solid rgb(92, 92, 223);
+    margin: 5px;
+    padding: 5px;
+    min-width: 300px;
+    font-size: 24px;
+    text-transform: lowercase;
+    list-style-position: inside;
+}
+.green:hover + .green:nth-child(n+2) + .green:nth-child(n){
+    background-color: red;
+    border: 2px solid red;
+    cursor: pointer;
+    color: white; 
+}
+ol.other_points li{
+    border: 2px solid rgb(92, 92, 223);
+    margin: 5px;
+    padding: 5px;
+    min-width: 300px;
+    font-size: 24px;
+    text-transform: lowercase;
+    list-style-position: inside;
+}
+ol.other_points li:hover ~ .green{
+    background-color: red;
+    border: 2px solid red;
+    cursor: pointer;
+    color: white;
+}
+
+ 

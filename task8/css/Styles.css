@@ -1,0 +1,229 @@
+body{
+    margin: 0px; 
+    font-family: Roboto, sans-serif;
+}
+header{
+    background-color: black;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+header a{
+    color: white;
+    text-decoration: none; 
+    padding: 5px; 
+    margin: 10px;
+}
+footer{
+    background-color: #f2f2f2;
+    height: 50px;
+    padding-top: 5px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+footer a{
+    background-image: url(../images/sprites2.png);
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-left: 10px;
+    -webkit-transition: -webkit-transform .9s ease-in-out;
+    transition: transform .9s ease-in-out;
+}
+footer a:hover{
+    transform: scale(1.1);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+h1{
+    text-align: left;
+    font-size: 55px;
+}
+hr{
+    margin: 10px; 
+    color: lightgray;
+}
+table{
+    width: 100%; 
+    background-color: white; 
+    padding: 5px; 
+    margin-bottom: 5px; 
+    table-layout: fixed;
+    border-radius: 3px;
+}
+table:hover{
+    box-shadow: -10px 0px 13px -7px #3b3939, 10px 0px 13px -7px #474444, 
+    inset -7px 4px 15px -3px rgba(141, 132, 132, 0);
+}
+td{
+    text-align: left;
+}
+tr{
+    height: 50px;
+}
+.part_table{
+    text-align: right;
+    width: 200px;
+}
+.div_background{
+    min-height: calc(100vh - 40px);
+    background-image: url(../images/pexels-photo-583846.jpeg); 
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    display: flex; 
+    align-items: center;
+}
+.primary_title{
+    font-size: 80px; 
+    font-weight: bold; 
+    color: white; 
+    margin-left: 100px;
+    letter-spacing: 2px;
+}
+.main{
+    background-color: #f2f2f2; 
+    padding: 5px;
+}
+.trainings{
+    padding-top: 20px;
+    text-align: center; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    margin-top: 15px;
+    letter-spacing: 2px;
+}
+.text{
+    text-align: justify; 
+    padding: 0 10px;
+    line-height: 25px;
+}
+.programs_demanted{
+    min-width: 250px;
+    padding: 0 20px;
+    height: 50px;
+    float: left;
+    margin: 5px;
+    border-radius: 3px;
+    background-color: white;
+    color: #1877CC;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;   
+}
+.programs_demanted:hover{
+    box-shadow: -10px 0px 13px -7px #645f5f, 10px 0px 13px -7px #b9aeae, 
+    inset -7px 4px 15px -3px rgba(177, 165, 165, 0);
+    text-decoration: underline;
+    transition: 1s;
+    color: rgb(12, 12, 110);
+    transform: scale(1.05);
+    border-radius: 3px;
+}
+.table{
+    color: #1877CC;
+    cursor: pointer;
+}
+.table:hover{
+    color: rgb(14, 14, 136);
+}
+.colomn{
+    display: inline-block;
+    border: 1px solid rgb(73, 211, 73);
+    background-color: rgb(33, 139, 33);
+    cursor: pointer;
+    color: white;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    margin: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+}
+.colomn:hover{
+    background-color: rgb(73, 211, 73);
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 
+    inset -7px 4px 15px -3px rgba(83,83,83,0);
+    transition: 1s;
+}
+.colomn2{
+    display: inline-block;
+    border: 1px solid rgb(61, 160, 190);
+    background-color: #f2f2f2;
+    cursor: pointer;
+    color: #1877CC;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    margin: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+}
+.colomn2:hover{
+    background-color: white;
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 
+    inset -7px 4px 15px -3px rgba(83,83,83,0);
+    transition: 1s;
+}
+.feedback{
+    background-color: white;
+    padding: 20px;
+    margin: 15px 8px 8px;
+    border-radius: 10px;
+}
+.feedback:hover{
+    box-shadow: -13px 14px 7px -5px rgba(34, 60, 80, 0.2);
+}
+.avatar{
+    float: left; 
+    overflow: hidden; 
+    border-radius: 100%; 
+    margin: 10px;
+    padding-right: 10px;
+}
+.avatar:hover{
+    transform: scale(1.2);
+    transition: 3s;
+}
+.card_course{
+    display: block;
+    color: #706f6f;
+    text-decoration: none;
+    padding-top: 15px;
+    max-width: 400px;
+}
+.card_name{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.card_footer{
+    font-size: 12px;
+    padding-top: 10px;
+}
+.card_footer_link{
+    margin: 10px;
+    color: blue;
+    text-decoration: none;
+}
+.text_feedback{
+    max-height: 100px;
+    overflow: hidden;
+    margin-top: 20px;
+    line-height: 25px;
+    text-align: justify;
+}
+.text_feedback:before{
+    content: "";
+    display: block;
+    height: 20px;
+    position: relative;
+    top: 73px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 75%)
+}
