@@ -30,7 +30,6 @@ header{
 .icons nav{
     position: relative;
     margin-right: 20px;
-    margin-top: -8px;
 }
 .icons nav ul li:first-child{
     display: none;
@@ -42,7 +41,8 @@ header{
     display: inline-block;
     font-size: 12px;
 }
-.icons nav ul li a > div{
+.icons nav ul li a > span{
+    display: block;
     margin: 0 10px 0 10px;
     text-align: center;
     cursor: pointer;
@@ -60,7 +60,8 @@ main{
     padding: 10px;
     background-color: honeydew;
 }
-.card_product{
+.card-product{
+    padding: 0 10px;
     position: relative;
     overflow: hidden;
     background-color: ivory;
@@ -75,18 +76,18 @@ main{
     display: flex;
     flex-direction: column;
 }
-.span_2y > .image_product {
+.span_2y > .card-product_image {
     height: auto;
     flex-grow: 1;
 }
-.image_product{
+.card-product_image{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 300px;
     padding: 20px;
 }
-.image_product > img{
+.card-product_image > img{
     width: 100%;
     height: 100%;
     border-radius: 5px;
@@ -103,30 +104,28 @@ main{
     text-indent: 10px;
     transition: top 1s;
 }
-.about_product:hover ~ .description{
+.card-product_about:hover ~ .description{
     top: 0;
 }
-.about_product{
+.card-product_about{
     display: flex;
     justify-content: space-between;
     color: darkgreen;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    padding: 10px;
+    margin-bottom: 10px;
 }
-.price{
+.card-product_price{
     display: flex;
     justify-content: space-between;
     font-size: 16px;
     font-weight: bold;
     color: rgb(216, 132, 29);
-    padding: 10px;
+    margin-bottom: 10px;
 }
-.select{
-    padding: 10px;
-}
-.select > button{
+.card-product > button{
+    margin-bottom: 20px;
     width: 100%;
     height: 30px;
     border: 1px solid darkgreen;
@@ -296,6 +295,7 @@ footer form > button{
 }
 .icons nav{
     position: relative;
+    margin-top: -8px;
 }
 .icons nav ul{
     width: 55px;
@@ -318,7 +318,7 @@ footer form > button{
     color: green;
     font-weight: bold;
 }
-.icons nav ul > div{
+.icons nav ul > span{
     display: block;
     padding: 5px;
 }
