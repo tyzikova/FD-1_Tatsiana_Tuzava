@@ -198,29 +198,31 @@ main{
 .flex_container_form{
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
 }
 .flex_element_form{
     display: flex;
+    align-items: center;
     margin: 10px;
     padding: 0 50px 0 50px  
 }
-.flex_element_form > div:first-child{
-    width: 120px; 
-    color: orange; 
-    font-family: open_font; 
-    font-weight: bold; 
-    font-size: 24px;
+.flex_element_form label{
+    display: flex;
+    width: 100%;
+    cursor: pointer;
 }
-.flex_element_form > div:last-child{
+.flex_element_form label > span{
+    width: 120px;
+    color: orange;
+    font-family: open_font;  
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+.flex_element_form label > [name]{
     flex-grow: 1;
 }
-.flex_element_form [name]{
-    width: 100%;
-}
-.flex_element_form .flex_element_button{
+.flex_element_button{
    display: flex;
-   justify-content: flex-end;
 }
 .flex_element_button > button{
     max-width: 120px;
