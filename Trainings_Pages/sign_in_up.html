@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/Styles.css">
+    <script src="https://kit.fontawesome.com/9de98033f0.js" crossorigin="anonymous"></script>
+    <title>LogIn/Register</title>
+</head>
+<body> 
+<div class="primary">
+
+    <input type="radio" id="tab1" name="tabs" checked>
+    <input type="radio" id="tab2" name="tabs">
+    <label for="tab1">Log In<i class="fas fa-user"></i></label>
+    <label for="tab2">Register<i class="fas fa-user-plus"></i></label>
+
+<div class="tabs">
+    <form class="container_sign_in">
+        <div class="container_element">
+        <h2>Sign In</h2>
+        <div class="icon"><i class="fas fa-user"></i></div>
+
+    <label class="forms_element"><span>Email</span>
+    <input type="text" placeholder="Email" name="email" required>
+    </label>
+    <label class="forms_element"><span>Password</span>
+    <input type="password" placeholder="Password" name="password" required>
+    </label>
+
+<div class="forms_element_button">
+    <button type="submit">Sign In</button>
+    <button type="reset">Reset</button>
+</div>
+    
+<div class="forms_element_footer">
+    <div>Don’t have an account?</div>
+    <div><a href="#tab2">Register</a></div>            
+</div>
+
+<div class="icon_home">
+    <a id="home_page" href="../Trainings_Pages/Homework.html"><i class="fas fa-arrow-circle-left"></i></a>
+</div>
+<div class="forms_element_footer">Back Home</div>    
+        </div>
+    </form>
+    
+    <form class="container_sign_in">
+        <div class="container_element"> 
+        <h2>Register</h2>
+        <div class="icon"><i class="fas fa-user-plus"></i></div>
+    
+    <label class="forms_element"><span>Name</span>
+        <input type="text" placeholder="Name" name="name" required>
+    </label>
+    <label class="forms_element"><span>Surname</span>
+        <input type="text" placeholder="Surname" name="surname" required>
+    </label>
+    <label class="forms_element"><span>Email</span>
+        <input type="text" placeholder="Email" name="email" required>
+    </label>
+    <label class="forms_element"><span>Password</span>
+        <input type="password" placeholder="Password" name="password" required>
+    </label>
+    <label class="forms_element"><span>Repeat password</span>
+        <input type="password" placeholder="Repeat password" name="password" required>
+    </label>
+    <label class="forms_element"><span>Birthday date</span>
+        <input type="date" name="date" required>
+    </label>
+
+    <div class="forms_element_radio">
+        <div>
+            <label><input type="radio" name="eye" value="blue">Blue</label>
+            <label><input type="radio" name="eye" value="gray">Gray</label>
+            <label><input type="radio" name="eye" value="brown">Brown</label>
+            <label><input type="radio" name="eye" value="green">Green</label>
+        </div>
+    </div>
+
+    <div class="forms_element_button">
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+    </div>
+
+    <div class="forms_element_footer">
+        <div>Already have an account?</div>
+        <div><a href="#tab1">Sign In</a></div>
+    </div>
+
+    <div class="icon_home">
+        <a href="../Trainings_Pages/Homework.html"><i class="fas fa-arrow-circle-left"></i></a>
+    </div>
+    <div class="forms_element_footer">Back Home</div>
+    </div>
+    </form>
+</div>
+</div>
+</body>
+</html>
