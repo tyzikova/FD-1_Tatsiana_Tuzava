@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_3</title>
+</head>
+<body>
+<script>
+
+/* 1 Выводим рандомные числа в консоль и опеделяем количество четных и нечетных*/
+let a = [];
+let even = 0;
+for ( let i = 0; i < 100; i++) {
+	a[i] = Math.floor(Math.random() * 1000);
+    if (a[i] % 2 === 0){
+        even ++;
+    }
+}
+console.log(even, 100 - even);
+
+/* 2 Угадываем рандомное число с 10 попыток*/
+
+let c = Math.floor(Math.random() * 100);
+let i;
+for (i = 0; i < 10; i++){
+    let b = +prompt('Enter any number for Random');
+    if(b === c){
+        console.log('Good!!! Take a cake!!!');
+        break;
+    }
+    else if (b > c){
+        console.log('Oops, try a smaller number');
+    }
+    else {
+        console.log('Oops, try a greater number');
+    }
+}
+if (i > 9){
+    console.log(c);
+}
+
+/* 3 Вывести самую большую цифру из элементов в массиве*/
+let d = prompt('Введите разные цифры и мы проверим, какая из них самая большая');
+let e = 0;
+while(d > 0){
+    if (d % 10 > e)
+    e = d % 10;
+    d = parseInt(d / 10);
+}
+console.log(e);
+
+/* 4 Подсчет количества слов с троке*/
+let f = prompt('Напишите что-нибудь');
+let g = f.split(" ");
+let h = 0;
+for (let i = 0; i < g.length; i++){
+    if(g[i] != ""){
+        h ++;
+    }
+}
+console.log(h);
+
+/* 5 Выводим рандомные числа в консоль*/
+let arr = [];
+let k;
+for (k = 0; k < 10; k++){
+arr.push(Math.floor(Math.random() * 10));    
+}
+    console.log(arr);
+
+    /* 5а второй вариант, без пуша */
+let bet = [];
+let bit = Math.floor(Math.random() * 10);
+for (let i = 0; i < 10; i++){
+    bet[i] =  Math.floor(Math.random() * 10);
+}
+console.log(bet);
+
+/* 6 Выводим в консоль набранные элементы массива*/
+let str = prompt('Enter any number or words');
+let arr1 = [];
+for (let i = 0; i < str.length; i++){
+arr1[i] = str[i];
+}
+console.log(arr1);
+
+/* 7 Вывод в консоль максимального числа и его индекса из массива*/
+let arr2 = [1, 2, 10, 15, 5, 80, 4, 9];
+let max = 0;
+for (let i = 0; i < arr2.length; i++){
+    if (arr2[i] > max){
+    max = arr2[i];
+    }
+}
+console.log(max, arr2.indexOf(max));
+
+/* 8 Удаление из массива введенного элемента*/
+let arr3 = [4, 5, 8, 6, 2, 8, 6, 9, 5, 3, 1,7];
+let arr33 = [];
+let arr4 = +prompt('Введите значение для удаления');
+for (let i = 0; i < arr3.length; i++){
+    if (arr3[i] !== arr4) {
+        arr33.push(arr3[i]);
+    }
+}
+console.log(arr33);
+
+/* 9 Вывод в консоль рандомных чисел из массива*/
+let map = false;
+for (let i = 1; i < 10000; i++){
+    for (let j = Math.round(i / 2); j > 1; j--){
+    if (i % j === 0){
+        map = false;
+        break;
+        }
+    else {
+        map = true;
+        }
+    }
+    if (map){
+    console.log(i);
+    }
+}
+
+/* 9 Вариант для размышления!!! Предыдущая задача*/
+let num = 100;
+for (let i = 2; i < 100; i++){
+let num1 = 1;
+    if (i > 2 && i % 2 != 0){
+    for (let j = 3; j*j <= i; j = j+2){
+        if (i % j === 0){
+            num1 = 0;
+            break;
+        }
+    }
+}
+    else if ( i != 2)
+    num1 = 0;
+    if (num1 === 1){
+    console.log(i);
+    }
+}
+</script>
+</body>
+</html>
