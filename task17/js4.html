@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_4</title>
+</head>
+<body>
+    <script>
+
+        /* 1 Найти в массиве мин и макс элементы и поменять их местами*/
+let a = [2, 5, 3, 6, 10, 7];
+let min = a[0];
+let max = a[0];
+let minIndx = 0;
+let maxIndx = 0;
+let i;
+for (i = 0; i < a.length; i++){
+    if (a[i] < min){
+    min = a[i];
+    minIndx = i;
+    }
+    else if(a[i] > max){
+        max = a[i];
+        maxIndx = i;
+    }
+}
+    a[minIndx] = max;
+    a[maxIndx] = min;    
+    console.log(a);
+
+        /* 2 Проверить массив на зеркальность элементов*/
+let mirr = [1, 2, 3, 4, 3, 2, 1];
+let flag = true;
+for (let i = 0; i < mirr.length / 2; i++){
+    if (mirr[i] !== mirr[mirr.length - i - 1]){
+        flag = false;
+    }
+}
+console.log(flag); 
+
+    /* 3 Удаление повоторяющихся элементов в массиве*/
+let a_b = [5, 3, 3, 6, 7, 4, 2, 1, 7, 1, 1, 1];
+let uniq = Array.from(new Set(a_b));
+console.log(uniq);
+
+    /* 4 Найти максимальный элeмент в массиве на четной позиции*/
+let arr = [2, 3, 4, 6, 5, 8, 9, 7];
+let arr_max = arr[0];
+for ( let i = 0; i < arr.length; i+=2){
+    if (arr[i] > arr_max){
+        arr_max = arr[i];
+    }
+}
+console.log(arr_max);
+
+        /* 5 Находим сумму лементов массива между мин и макс*/
+let arr1 = [2, 4, 9, 3, 7, 5, 1, 8];
+let min1 = arr1[0];
+let max1 = arr1[0];
+let minIndx1 = 0;
+let maxIndx1 = 0;
+for (let i = 0; i < arr1.length; i++){
+    if (arr1[i] < min1){
+        min1 = arr1[i];
+        minIndx1 = i;
+    }
+    else if (arr1[i] > max1){
+        max1 = arr1[i];
+        maxIndx1 = i;
+    }
+}
+let first;
+let last;
+    if (minIndx1 < maxIndx1){
+        first = minIndx1;
+        last = maxIndx1;
+    }
+    else {
+        first = maxIndx1;
+        last = minIndx1;
+    }
+let summ = 0;
+for (let j = first + 1;  j<= last - 1; j++){
+    summ += arr1[j]
+}
+console.log(summ);
+
+    /* 6 Вывод элемента массива, встреч. чаще всего в нем*/
+let arr6 = [1, 2, 3, 3, 4, 5, 3, 5];
+let b = 0;
+let c = 1;
+let result = arr6[0];
+for (let i = 0; i < arr6.length - 1; i++){
+    for (let j = i + 1; j < arr6.length; j++){
+        if (arr6[i] == arr6[j])
+        b++;
+        if (b > c){
+            c = b;
+            result = arr6[i];
+        }
+    }
+    b = 0;
+}
+console.log(result);
+
+    /* 7 Найти среднее арифметическое массива и вывести те значения, котороые меньше среднеарифм*/
+let arr7 = [1, 5, 4, 6, 2, 8];
+let sum = 0;
+for (let i = 0; i < arr7.length; i++){
+    sum += arr7[i];
+}
+let sr = sum / arr.length;
+for (let i = 0; i < arr7.length; i++){
+    if (arr7[i] < sr){
+        console.log(arr7[i]);
+    }
+}
+
+    /* 8 разворот элементов массива с конца в начало */
+let arr8 = ['uno', 'dos', 'tres', 'cuatro', 'sinco'];
+let arr_revers = arr8.reverse();
+    console.log(arr_revers);
+
+    /* 8a разворот элементов массива с конца в начало*/
+let arr8b = [1, 2, 3, 4, 5];
+for (let i = 0, j = arr8b.length - 1; i < j; i++, j--){
+    [arr8b[i], arr8b[j]] = [arr8b[j], arr8b[i]];
+}
+    console.log(arr8b);
+
+    /* 9 Отобразить сначала элементы положительные, затем отрицательные*/
+let arr9 = [5, 4, -3, 2, 1, -5];
+let arr9a = [];
+ for (let i = 0; i < arr9.length; i++){
+     if (arr9[i] > 0){
+        arr9a.push(arr9[i]);
+     }
+ }
+for (let i = 0; i < arr9.length; i++){
+    if (arr9[i] < 0){
+        arr9a.push(arr9[i]);
+    }
+}
+console.log(arr9a);
+    </script>
+</body>
+</html>
