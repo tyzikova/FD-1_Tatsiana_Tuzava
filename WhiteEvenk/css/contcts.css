@@ -141,7 +141,7 @@
 }
 @media all and (min-width: 320px) and (max-width: 900px){
 	.contacts{
-    grid-template-rows: 300px 500px 400px 1fr;
+    grid-template-rows: 300px 850px 430px 1fr;
     grid-template-columns: 1fr;
     grid-template-areas:
     "map map map"

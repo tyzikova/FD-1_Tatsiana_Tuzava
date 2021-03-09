@@ -785,6 +785,12 @@ footer{
 .modal_form > div:first-child{
     width: 320px;
 }
+.footer_content_social_adress > div{
+    font-size: 14px;
+}
+.footer_content_link > a{
+    font-size: 14px;
+}
 .about_us_personal_image{
     min-width: 350px;
     height: 250px;
