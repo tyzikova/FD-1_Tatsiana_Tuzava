@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS_4</title>
+    <title>JS_5</title>
 </head>
 <body>
     <script>
@@ -107,19 +107,57 @@ function findNumberOften(arr7){
 console.log(findNumberOften([5, 6, 5, 2, 1, 5]));
 
     /* 8 Function for swap elements in the array by index */
-function swapForElements(arr8){
-
+function swapForElements(arr, firstIndex, secondIndex){
+	arr.splice(firstIndex, 1, arr.splice(secondIndex, 1, arr[firstIndex])[0]);
 }
+	let arr8 = [1, 2, 3, 4, 5];
+	swapForElements(arr8, 1, 4);
+	console.log(arr8);
 
-        /* 8a разворот элементов массива с конца в начало*/
+     /* 9 Функция пузырьковой сортировки*/
+function sortingBubble(arr9){
+for (let i = arr9.length - 1; i > 0; i--){
+for (let j = 0; j < i; j++){
+if (arr9[j] > arr9[j + 1]){
+let a = arr9[j];
+arr9[j] = arr9[j + 1];
+arr9[j + 1] = a;
+		} 
+	}
+}
+return arr9;
+}
+let array1 = [2, 5, 1, 7, 4];
+let array2 = [10, 5, 1, 2, 6];
+console.log(array1);
+console.log(array2);
+console.log(sortingBubble(array1));
+console.log(sortingBubble(array2));
 
+	/* 9 Функция пузырьковой сортировки с flag*/
+function sortingBubble(array){
+for (let i = 0; i < array.length - 1; i++){
+let flags = false;
+for (let j = 0; j < array.length - i; j++){
+if (array[j] > array[j + 1]){
+let b = array[j];
+array[j] = array[j + 1];
+array[j + 1] = b;
+flags = true;
+			} 
+		}
+if (!flags) break;
+	}
+return array;
+}
+let array11 = [2, 5, 1, 7, 4];
+let array22 = [10, 5, 1, 2, 6];
+console.log(array11);
+console.log(array22);
+console.log(sortingBubble(array11));
+console.log(sortingBubble(array22));
 
-        /* 9 Отобразить сначала элементы положительные, затем отрицательные*/
-
-
-	    /* 10 Поиск пары в массиве, у которой сумма больше*/
-
-
+	/* 10 */
 </script>
 </body>
 </html>
