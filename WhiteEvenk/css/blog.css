@@ -166,43 +166,43 @@ audio{
     border-radius: 10px;
 }
 @keyframes display{
-    0% {
+    0%{
     transform: translateX(0);
     opacity: 0;
 }
-    10% {
+    10%{
     transform: translateX(0);
     opacity: 1;
 }
-    20% {
+    20%{
     transform: translateX(0);
     opacity: 0;
 }
-    30% {
+    30%{
     transform: translateX(0);
     opacity: 0;
 }
-    40% {
+    40%{
     transform: translateX(0);
     opacity: 0;
 }
-    50% {
+    50%{
     transform: translateX(0);
     opacity: 0;
 }
-    60% {
+    60%{
     transform: translateX(0);
     opacity: 0;
 }
-    70% {
+    70%{
     transform: translateX(0);
     opacity: 0;
 }
-    80% {
+    80%{
     transform: translateX(0);
     opacity: 0;
 }
-    90% {
+    90%{
     transform: translateX(0);
     opacity: 0;
 }
@@ -211,31 +211,31 @@ audio{
     opacity: 0;
     }
 }
-.slider-blog img:nth-child(2) {
+.slider-blog img:nth-child(2){
     animation-delay: 3s;
 }
-.slider-blog img:nth-child(3) {
+.slider-blog img:nth-child(3){
     animation-delay: 6s;
 }
-.slider-blog img:nth-child(4) {
+.slider-blog img:nth-child(4){
     animation-delay: 9s;
 }
-.slider-blog img:nth-child(5) {
+.slider-blog img:nth-child(5){
     animation-delay: 12s;
 }
-.slider-blog img:nth-child(6) {
+.slider-blog img:nth-child(6){
     animation-delay: 15s;
 }
-.slider-blog img:nth-child(7) {
+.slider-blog img:nth-child(7){
     animation-delay: 18s;
 }
-.slider-blog img:nth-child(8) {
+.slider-blog img:nth-child(8){
     animation-delay: 21s;
 }
-.slider-blog img:nth-child(9) {
+.slider-blog img:nth-child(9){
     animation-delay: 24s;
 }
-.slider-blog img:nth-child(10) {
+.slider-blog img:nth-child(10){
     animation-delay: 27s;
 }
 .grid-container_3{
@@ -269,10 +269,10 @@ audio{
     cursor: pointer;
     margin: 20px auto;
 }
-.card-grid:hover .front {
+.card-grid:hover .front{
     transform: rotateY(180deg);
 }
-.card-grid:hover .back {
+.card-grid:hover .back{
     transform: rotateY(360deg);
 }
 .grid-container_4{
@@ -374,7 +374,7 @@ video{
 	}
 }
 @media all and (min-width: 320px) and (max-width: 550px){
-	.slider-blog{
+.slider-blog{
     width: 350px;
     height: 350px;
 }
