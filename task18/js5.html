@@ -157,7 +157,29 @@ console.log(array22);
 console.log(sortingBubble(array11));
 console.log(sortingBubble(array22));
 
-	/* 10 */
+	/* 10 Создание обьекта типа "лесенка"*/
+let counter = {
+    step: 0,
+    up(){
+        counter.step++;
+        return counter;
+    },
+    down(){
+        counter.step--;
+        return counter;
+    },
+    reset(){
+        counter.step;
+        return counter;
+    },
+    showStep(){
+        alert(counter.step);
+    }
+};
+counter.up();
+counter.up();
+counter.down();
+counter.showStep();
 </script>
 </body>
 </html>
