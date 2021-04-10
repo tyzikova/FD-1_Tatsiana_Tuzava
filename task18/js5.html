@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_5</title>
+</head>
+<body>
+    <script>
+
+        /* 1 Функция с макс элементом в массиве*/
+function findMax(arr1){
+    let max = arr1[0];
+    for (let i = 0; i < arr1.length; i++){
+        let num = arr1[i];
+        if (num > max){
+        max = num
+        }
+    }
+    return max;
+}
+console.log(findMax([5, 200, 6, 1000, 7, 541]));
+
+    /* 2 Revers with function*/
+function reversArr(arr2){
+    let arr_revers = arr2.reverse();
+    return arr_revers;
+}
+console.log(reversArr([1, 2 , 3, 4 ,5]));
+
+    /* 3 Function wich swap 2 elements in array*/
+function swapArr(arr3){
+    let newInd;
+    for (let i = 0; i < arr3.length; i ++){
+        newInd = arr3[5];
+        arr3[5] = arr3[1];
+        arr3[1] = newInd;
+        return arr3;
+    }
+}
+console.log(swapArr([3, 4, 5, 6, 7, 8, 9])); 
+
+/* 3a */
+function swapArr1(arr, firstInd, secondInd){
+    let a = arr[firstInd];
+    arr[firstInd] = arr[secondInd];
+    arr[secondInd] = a;
+    return arr;
+}
+let arr = [2, 5, 7, 4, 6];
+let arr1 = [2, 36, 100, 87];
+console.log(swapArr1(arr, 2, 3));
+console.log(swapArr1(arr1, 0, 2));
+
+    /* 4 Функция генерации массива и вывод в консоль его длинны*/
+function randomArr(arrLengs) {
+    let arr = [];
+    for(let i =0; i < arrLengs; i++){
+        arr.push(Math.floor(Math.random() * 10));
+    }
+    return arr;
+}     
+console.log(randomArr(5));
+
+
+    /* 5 функция вычисления суммы цифр в числе.*/
+function digitSum(n){
+    let numStr = String(n);
+    let sum5a = 0;
+    for (let i = 0; i < numStr.length; i++){
+        sum5a += Number(numStr[i]);
+    }
+    return sum5a;
+}
+console.log(digitSum(123456789));
+
+    /* 6 Функция для калькулятора НОД*/
+function gsdCalc(a, b){
+    while ( b !== 0){
+       let c = a % b;
+        a = b;
+        b = c;
+    }
+    return a;
+}
+console.log(gsdCalc(50, 10));
+
+    /* 7 Создание функции на поиск в массиве числа, встречающегося чаще всех*/
+function findNumberOften(arr7){
+    let a = 0;
+    let b = 0;
+    let result = arr7[0];
+    for (let i = 0; i < arr7.length; i++){
+        for (let j = i; j < arr7.length; j++){
+            if (arr7[i] == arr7[j])
+            a++;
+            if (a > b){
+                b = a;
+                result = arr7[i];
+            }
+        }
+        a = 0;
+    }
+    return result;
+}
+console.log(findNumberOften([5, 6, 5, 2, 1, 5]));
+
+    /* 8 Function for swap elements in the array by index */
+function swapForElements(arr, firstIndex, secondIndex){
+	arr.splice(firstIndex, 1, arr.splice(secondIndex, 1, arr[firstIndex])[0]);
+}
+	let arr8 = [1, 2, 3, 4, 5];
+	swapForElements(arr8, 1, 4);
+	console.log(arr8);
+
+     /* 9 Функция пузырьковой сортировки*/
+function sortingBubble(arr9){
+for (let i = arr9.length - 1; i > 0; i--){
+for (let j = 0; j < i; j++){
+if (arr9[j] > arr9[j + 1]){
+let a = arr9[j];
+arr9[j] = arr9[j + 1];
+arr9[j + 1] = a;
+		} 
+	}
+}
+return arr9;
+}
+let array1 = [2, 5, 1, 7, 4];
+let array2 = [10, 5, 1, 2, 6];
+console.log(array1);
+console.log(array2);
+console.log(sortingBubble(array1));
+console.log(sortingBubble(array2));
+
+	/* 9 Функция пузырьковой сортировки с flag*/
+function sortingBubble(array){
+for (let i = 0; i < array.length - 1; i++){
+let flags = false;
+for (let j = 0; j < array.length - i; j++){
+if (array[j] > array[j + 1]){
+let b = array[j];
+array[j] = array[j + 1];
+array[j + 1] = b;
+flags = true;
+			} 
+		}
+if (!flags) break;
+	}
+return array;
+}
+let array11 = [2, 5, 1, 7, 4];
+let array22 = [10, 5, 1, 2, 6];
+console.log(array11);
+console.log(array22);
+console.log(sortingBubble(array11));
+console.log(sortingBubble(array22));
+
+	/* 10 Создание обьекта типа "лесенка"*/
+let counter = {
+    step: 0,
+    up(){
+        counter.step++;
+        return counter;
+    },
+    down(){
+        counter.step--;
+        return counter;
+    },
+    reset(){
+        counter.step;
+        return counter;
+    },
+    showStep(){
+        alert(counter.step);
+    }
+};
+counter.up();
+counter.up();
+counter.down();
+counter.showStep();
+</script>
+</body>
+</html>
