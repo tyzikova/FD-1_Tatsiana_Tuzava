@@ -1,0 +1,270 @@
+/* info */
+.info-container{
+    max-width: 100%;
+    padding: 25px;
+    background-image: url(../images/main_bg.jpg);
+    margin: 0 auto;
+}
+.info-page{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 400px;
+    grid-gap: 30px;
+    grid-auto-flow: dense;
+}
+.item1{
+    background-image: url('../images/blog3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 4px 2px 4px 2px rgba(14, 10, 27, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 15px;
+}
+.modal-link{
+    text-decoration: none;
+    color: darkorange;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: inherit;
+    font-size: 26px;
+    font-family: 'Yeseva One', cursive;
+}
+.item2{
+    background-image: url('../images/blog7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 4px 2px 4px 2px rgba(14, 10, 27, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 15px;
+}
+.item3{
+    background-image: url('../images/blog5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 4px 2px 4px 2px rgba(14, 10, 27, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    padding: 15px;
+}
+.item4{
+    background-image: url('../images/blog6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 4px 2px 4px 2px rgba(14, 10, 27, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    padding: 15px;
+}
+.item5 {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: url('../images/blog1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 4px 2px 4px 2px rgba(14, 10, 27, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    padding: 15px;
+}
+.item6{
+    grid-column: span 3;
+    grid-row: span 2;
+    background-image: url('../images/blog4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 4px 2px 4px 2px rgba(14, 10, 27, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    padding: 15px;
+}
+.item7{
+    background-image: url('../images/blog2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 4px 2px 4px 2px rgba(14, 10, 27, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 15px;
+}
+.modal-info{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(240, 236, 243, 0.5);
+    z-index: 15;
+    display: none;
+    overflow-x: auto;
+}
+.modal-info:target{
+    display: block;
+}
+.modal-info > div:first-child{
+    border: 2px solid #a08869;
+    width: 650px;
+    max-width: 1060px;
+    min-height: 25vh;
+    overflow: hidden;
+    position: relative;
+    margin: 50px auto;
+    padding: 5px 20px 10px 20px;
+    border-radius: 10px;
+    background-image: url('../images/formodalka.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+.close-modal{
+    color: #291704cf;
+    line-height: 35px;
+    position: absolute;
+    right: 10px;
+    text-align: left;
+    top: 10px;
+    width: 30px;
+    text-decoration: none;
+    font-size: 30px;
+    transition: .5s linear;
+}
+.close-modal:hover{
+    color: darkorange;
+}
+.container-flex{
+    display: flex; 
+    justify-content: space-between;
+    flex-direction: column;
+}
+.container-flex-info{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container-flex-info > div{
+    width: 250px; 
+    margin: 0 30px 20px 0;
+    transition: 3s;
+	cursor: pointer;
+}
+.container-flex-info div > img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    box-shadow: 4px 2px 4px 2px rgba(14, 10, 27, 0.2);
+}
+.container-flex-info > div:hover{
+    transform: scale(1.1);
+}
+.container-flex-info > p{
+    font-size: 20px;
+    color: #180f04eb;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    text-indent: 40px;
+    line-height: 27px;
+    font-weight: normal;
+}
+.element-back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Yeseva One', cursive;
+    color: darkorange;
+    margin: 10px;  
+}
+.element-back > div a{
+    color: darkorange;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 1s;
+}
+.icon-home-back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-home-back a > i{
+    text-decoration: none;
+    font-size: 40px;
+    color: #291704cf;
+    transition: .5s linear;
+}
+.icon-home-back a > i:hover{
+    color: darkorange;
+    transform: scale(1.2);
+}
+@media all and (min-width: 320px) and (max-width: 1250px){
+.info-page{
+    grid-auto-rows: 250px;
+    }
+}
+@media all and (min-width: 320px) and (max-width: 865px){
+.info-page{
+    grid-template-columns: repeat(2, 1fr);
+}
+.item7{
+	grid-column: span 2;
+	grid-row: span 2;
+}
+.item6{
+    grid-column: span 2;
+    }
+}
+@media all and (min-width: 320px) and (max-width: 700px){
+.modal-info > div:first-child{
+    width: 500px;
+    }	
+}
+@media all and (min-width: 320px) and (max-width: 650px){
+.info-page{
+    grid-template-columns: 1fr;
+    grid-auto-rows: 400px;
+}
+.item5, .item6, .item7{
+   grid-row: span 1;
+   grid-column: span 1;
+	}
+}
+@media all and (min-width: 320px) and (max-width: 550px){
+.modal-info > div:first-child{
+    width: 350px;
+	}
+}
+@media all and (min-width: 320px) and (max-width: 400px){
+.modal-info > div:first-child{
+    width: 275px;
+    }
+}
+
