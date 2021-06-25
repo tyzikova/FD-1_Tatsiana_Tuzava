@@ -29,74 +29,13 @@ for (let i = c; i <= d; i++){
 }
 
          /* 3 */
-let language = prompt('Select language');
-let num = +prompt('Enter a number, please');
-if (language === 'ru'){
-    if (num === 1){
-    console.log('Один');
-}
-    if (num === 2){
-    console.log('Два');
-}
-    if (num === 3){
-    console.log('Три');
-}
-    if (num === 4){
-    console.log('Четыре');
-}
-    if (num === 5){
-    console.log('Пять');
-}
-    if (num === 6){
-    console.log('Шесть');
-}
-    if (num === 7){
-    console.log('Семь');
-}
-    if (num === 8){
-    console.log('Восемь');
-}
-    if (num === 9){
-    console.log('Девять');
-}
-    if (num === 10){
-    console.log('Десять');
-    }
-}
-else {
-if (language === 'en'){
-    if (num === 1){
-    console.log('One');
-} 
-    if (num === 2){
-    console.log('Two');
-}
-    if (num === 3){
-    console.log('Three');
-} 
-    if (num === 4){
-    console.log('Four');
-} 
-    if (num === 5){
-    console.log('Five');
-} 
-    if (num === 6){
-    console.log('Six');
-} 
-    if (num === 7){
-    console.log('Seven');
-} 
-    if (num === 8){
-    console.log('Eight');
-}
-    if (num === 9){
-    console.log('Nine');
-} 
-    if (num === 10){
-    console.log('Ten');
-        } 
-    }
-}
+let language = prompt('Select language', 'en or ru');
+let num = +prompt('Enter a number from 1 to 10, please');
+let arr = {
+    'ru': {1: 'Один', 2: 'Два', 3: 'Три', 4: 'Четыре', 5: 'Пять', 6: 'Шесть', 7: 'Семь', 8: 'Восемь', 9: 'Девять', 10: 'Десять'},
+    'en': {1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five', 6: 'Six', 7: 'Seven', 8: 'Eight', 9: 'Nine', 10: 'Ten'},
+};
+console.log(arr[language][num]);   
 
          /* 4 */
 let browser = prompt('Enter the name of the browser');
