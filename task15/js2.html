@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_2</title>
+</head>
+<body>
+    <script>
+
+         /* 1 */
+let a = +prompt('Enter a number, please');
+let b = 1;
+while (a != 0){
+    b *= a%10;
+    a = parseInt(a/10);
+}
+    console.log(b);
+
+          /* 2 */
+let c = +prompt('Enter first number, please');
+let d = +prompt('Enter second number, please');
+for (let i = c; i <= d; i++){
+    console.log(i);
+}
+    for (let i = d ; i <= c; i++){
+    console.log(i);
+}
+
+         /* 3 */
+let language = prompt('Select language', 'en or ru');
+let num = +prompt('Enter a number from 1 to 10, please');
+let arr = {
+    'ru': {1: 'Один', 2: 'Два', 3: 'Три', 4: 'Четыре', 5: 'Пять', 6: 'Шесть', 7: 'Семь', 8: 'Восемь', 9: 'Девять', 10: 'Десять'},
+    'en': {1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five', 6: 'Six', 7: 'Seven', 8: 'Eight', 9: 'Nine', 10: 'Ten'},
+};
+console.log(arr[language][num]);   
+
+         /* 4 */
+let browser = prompt('Enter the name of the browser');
+    switch(browser.toLowerCase()){
+    case 'edge':
+    case 'ie':
+    case 'opera':
+        result = 'Partial support';
+        break;
+    case 'crome':
+    case 'mozilla':
+    case 'safari':
+        result = 'Support';
+        break;
+        default:
+        result = 'Not support';
+    }
+    console.log(result);
+
+         /* 5 */
+let f = +prompt('Enter a number for factorial');
+let factorial = 1;
+    while (f){
+    factorial *= f--;
+}
+    console.log(factorial);
+
+         /* 6 */
+let min = +prompt('Enter a minimum number, please');
+let max = +prompt('Enter a maximum number, please');
+let step = +prompt('Step');
+    for (let i = min; i <= max; i+=step){
+    console.log(i);
+}
+
+         /* 7 */
+let fibonacci = +prompt('Введите порядковый номер числа Фибоначчи');
+let fi1 = 0;
+let fi2 = 1;
+    for(let i = 1; i <= fibonacci; i++){
+    let fi3 = fi1 + fi2;
+        fi1 = fi2;
+        fi2 = fi3;
+        console.log(fi3);
+    }
+
+         /* 8 */
+let run1 = Math.floor(Math.random() * 10); 
+let i;
+for (i = 0; i < 5; i++){   
+let run = prompt('Enter any number for Random');
+    if (run === run1){
+    console.log('Good!!! You win');
+    break;
+}
+    else {
+    console.log('Oops, not good');
+    }
+}
+    if (i > 4){
+    console.log(run1);
+}
+
+    </script>
+</body>
+</html>
